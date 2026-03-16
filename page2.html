@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Digital Garden - Page 2</title>
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zero-md@2.5.3/dist/zero-md.min.js"></script>
 
     <style>
         body { font-family: sans-serif; padding: 50px; line-height: 1.6; background-color: white; }
@@ -21,18 +21,9 @@
 
     <main>
         <section class="topic-box">
-            <h2>The First Sprout</h2>
-            
-            <zero-md src="p2-s1.md">
-                <template>
-                    <style>
-                        /* This ensures ALL text inside the markdown is visible and dark */
-                        :host { display: block; min-height: 50px; color: #333; }
-                        * { color: #333 !important; } 
-                    </style>
-                </template>
-            </zero-md>
-        </section>
+    <h2>The First Sprout</h2>
+    <zero-md src="p2-s1.md" no-cache></zero-md>
+</section>
     </main>
 
 </body>
