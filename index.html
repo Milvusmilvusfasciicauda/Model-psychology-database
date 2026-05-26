@@ -2,45 +2,73 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Bricolage+Grotesque:wght@800&family=Playfair Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Playfair+Display:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
     <title>Model Psychology Database</title>
     <style>
+        body { 
+            font-family: sans-serif; 
+            line-height: 1.6; 
+            max-width: 600px; 
+            margin: 40px auto; 
+            padding: 20px; 
+            font-size: 20px; 
+            background: #f9f9f9; 
+        }
+
+        /* Group container for your titles to keep them centered */
+        .brand-group {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
         h1 {
-    /* Swap the name below to try the different vibes */
-    font-family: 'Playfair Display', serif; 
-    
-    font-size: 50px;
-    white-space: nowrap;
-    color: #101417;
-    text-align: center;
-    margin-top: 30px;
-}
-        body { font-family: sans-serif; line-height: 1.6; max-width: 600px; margin: 40px auto; padding: 20px; font-size: 20px; background: #f9f9f9; }
-        a { color: #0070f3; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+            font-family: 'Playfair Display', serif; 
+            font-size: 50px;
+            color: #101417;
+            margin: 30px 0 0 0;
+        }
+
         .subtitle {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.0rem;             
-    font-weight: 300;             
-    letter-spacing: 1px;          
-    margin-top: 10px;              
-    color: #101417;                 
-    text-align: center;
-}
-        header {
-        display: flex;
-        align-items: baseline; /* Aligns the bottom of the text perfectly */
-        gap: 20px;             /* Adds a comfortable space between the title and the link */
-    }
-        header a {
-        white-space: nowrap; /* Keeps the long link text on one single line */
-    }
+            font-family: 'Playfair Display', serif;
+            font-size: 2.0rem;             
+            font-weight: 300;             
+            letter-spacing: 1px;          
+            margin: 5px 0 0 0;              
+            color: #101417;                 
+        }
+
+        /* The Link Container: Centers the text block on the page */
+        .link-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* The Secret Weapon: Forces the link to stay on one line, 
+           but allows it to scroll or scale if the screen gets too tight */
+        .no-split-link {
+            color: #0070f3; 
+            text-decoration: none;
+            white-space: nowrap; 
+            display: inline-block;
+        }
+
+        .no-split-link:hover { 
+            text-decoration: underline; 
+        }
     </style>
 </head>
 <body>
+
     <header class="main-header">
-    <h1>Model Psychology Database</h1>
-    <p class="subtitle">Homepage</p>  
-    <p> 1891-1914: <a href="page2.html" class="no-split-link">Click here to see events happened during this era and psychological evidence.</a></p>
+        <div class="brand-group">
+            <h1>Model Psychology Database</h1>
+            <p class="subtitle">Homepage</p>  
+        </div>
+        
+        <p class="link-container"> 
+            1891-1914: <a href="page2.html" class="no-split-link">Click here to see what I wrote here and also some fun facts.</a>
+        </p>
+    </header>
+
 </body>
 </html>
