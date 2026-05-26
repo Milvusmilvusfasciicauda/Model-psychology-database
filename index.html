@@ -1,59 +1,70 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Playfair+Display:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
-    <title>Model Psychology Database</title>
+    <title>Database</title>
     <style>
         body { 
             font-family: sans-serif; 
             line-height: 1.6; 
-            max-width: 600px; 
+            max-width: 800px; /* Bumped up slightly to comfortably fit your long link text */
             margin: 40px auto; 
             padding: 20px; 
             font-size: 20px; 
             background: #f9f9f9; 
         }
 
-        /* Group container for your titles to keep them centered */
+        /* The Main Header Row */
+        .main-header {
+            display: flex;
+            justify-content: space-between; /* Pushes brand-group to the left, link-box to the right */
+            align-items: baseline;          /* Aligns the baseline of the text perfectly */
+            border-bottom: 1px solid #e0e0e0; /* Optional: adds a clean divider line under your header */
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        /* Left Side: Brand Group (Stacked vertically, aligned left) */
         .brand-group {
-            text-align: center;
-            margin-bottom: 20px;
+            text-align: left; /* No more invitation card centering! */
         }
 
         h1 {
             font-family: 'Playfair Display', serif; 
             font-size: 50px;
             color: #101417;
-            margin: 30px 0 0 0;
+            margin: 0; /* Clears default messy margins */
         }
 
         .subtitle {
             font-family: 'Playfair Display', serif;
-            font-size: 2.0rem;             
+            font-size: 1.4rem; /* Slightly smaller for a cleaner look next to a long link */            
             font-weight: 300;             
             letter-spacing: 1px;          
             margin: 5px 0 0 0;              
-            color: #101417;                 
+            color: #666666; /* Muted grey so it doesn't compete with the H1 */                
         }
 
-        /* The Link Container: Centers the text block on the page */
-        .link-container {
-            text-align: center;
-            margin-top: 30px;
+        /* Right Side: Link Box (Aligned left internally, but pushed to the right side of the page) */
+        .link-box {
+            margin: 0;
+            text-align: right;
         }
 
-        /* The Secret Weapon: Forces the link to stay on one line, 
-           but allows it to scroll or scale if the screen gets too tight */
-        .no-split-link {
+        a { 
             color: #0070f3; 
-            text-decoration: none;
-            white-space: nowrap; 
-            display: inline-block;
+            text-decoration: none; 
+        }
+        
+        a:hover { 
+            text-decoration: underline; 
         }
 
-        .no-split-link:hover { 
-            text-decoration: underline; 
+        /* Forces the long text link to stay entirely on one line */
+        .no-split-link {
+            white-space: nowrap; 
         }
     </style>
 </head>
@@ -61,12 +72,12 @@
 
     <header class="main-header">
         <div class="brand-group">
-            <h1>Model Psychology Database</h1>
+            <h1>Database</h1>
             <p class="subtitle">Homepage</p>  
         </div>
         
-        <p class="link-container"> 
-            1891-1914: <a href="page2.html" class="no-split-link">Click here to see what I wrote here and also some fun facts.</a>
+        <p class="link-box"> 
+            Day: <a href="page2.html" class="no-split-link">Click here to see what I wrote here and also some fun facts.</a>
         </p>
     </header>
 
