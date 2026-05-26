@@ -3,83 +3,45 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@800&family=Playfair+Display:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
-    <title>Database</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Bricolage+Grotesque:wght@800&family=Playfair Display:wght@700&display=swap" rel="stylesheet">
+    <title>Model Psychology Database</title>
     <style>
-        body { 
-            font-family: sans-serif; 
-            line-height: 1.6; 
-            max-width: 800px; /* Bumped up slightly to comfortably fit your long link text */
-            margin: 40px auto; 
-            padding: 20px; 
-            font-size: 20px; 
-            background: #f9f9f9; 
-        }
-
-        /* The Main Header Row */
-        .main-header {
-            display: flex;
-            justify-content: space-between; /* Pushes brand-group to the left, link-box to the right */
-            align-items: baseline;          /* Aligns the baseline of the text perfectly */
-            border-bottom: 1px solid #e0e0e0; /* Optional: adds a clean divider line under your header */
-            padding-bottom: 20px;
-            margin-bottom: 40px;
-        }
-
-        /* Left Side: Brand Group (Stacked vertically, aligned left) */
-        .brand-group {
-            text-align: left; /* No more invitation card centering! */
-        }
-
         h1 {
-            font-family: 'Playfair Display', serif; 
-            font-size: 50px;
-            color: #101417;
-            margin: 0; /* Clears default messy margins */
-        }
-
+    /* Swap the name below to try the different vibes */
+    font-family: 'Playfair Display', serif; 
+    
+    font-size: 50px;
+    white-space: nowrap;
+    color: #101417;
+    text-align: center;
+    margin-top: 30px;
+}
+        body { font-family: sans-serif; line-height: 1.6; max-width: 600px; margin: 40px auto; padding: 20px; font-size: 20px; background: #f9f9f9; }
+        a { color: #0070f3; text-decoration: none; }
+        a:hover { text-decoration: underline; }
         .subtitle {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem; /* Slightly smaller for a cleaner look next to a long link */            
-            font-weight: 300;             
-            letter-spacing: 1px;          
-            margin: 5px 0 0 0;              
-            color: #666666; /* Muted grey so it doesn't compete with the H1 */                
-        }
-
-        /* Right Side: Link Box (Aligned left internally, but pushed to the right side of the page) */
-        .link-box {
-            margin: 0;
-            text-align: right;
-        }
-
-        a { 
-            color: #0070f3; 
-            text-decoration: none; 
-        }
-        
-        a:hover { 
-            text-decoration: underline; 
-        }
-
-        /* Forces the long text link to stay entirely on one line */
-        .no-split-link {
-            white-space: nowrap; 
-        }
+    font-family: 'Playfair Display', serif;
+    font-size: 2.0rem;             
+    font-weight: 300;             
+    letter-spacing: 1px;          
+    margin-top: 10px;              
+    color: #101417;                 
+    text-align: center;
+}
+        header {
+        display: flex;
+        align-items: baseline;
+        gap: 20px;             
+    }
+        header a {
+        white-space: nowrap; /* Keeps the long link text on one single line */
+    }
     </style>
 </head>
 <body>
-
     <header class="main-header">
-        <div class="brand-group">
-            <h1>Database</h1>
-            <p class="subtitle">Homepage</p>  
-        </div>
-        
-        <p class="link-box"> 
-            Day: <a href="page2.html" class="no-split-link">Click here to see what I wrote here and also some fun facts.</a>
-        </p>
-    </header>
-
+    <h1>Model Psychology Database</h1>
+    <p class="subtitle">Homepage</p>  
+    <p> 1891-1914: <a href="page2.html" class="no-split-link">Click here to see events happened during this era and psychological evidence.</a></p>
 </body>
 </html>
